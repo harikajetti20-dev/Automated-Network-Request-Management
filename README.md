@@ -1,40 +1,105 @@
-# Automated-Network-Request-Management
-A ServiceNow-based application that automates network request submission, approval, assignment, tracking, and management using workflows and automation.
 
-## Project Overview
+# Automated Network Request Management
 
-Automated Network Request Management is a ServiceNow-based application
-designed to automate the process of submitting, approving, assigning,
-tracking, and managing network-related requests.
+A ServiceNow-based application designed to automate and streamline the end-to-end lifecycle of network service requests, from request submission and approval to task assignment, processing, tracking, and completion.
 
-## Technologies Used
+---
 
-- ServiceNow
-- Service Catalog
-- Flow Designer
-- Business Rules
-- Client Scripts
-- UI Policies
-- Notifications
-- ACLs
+## 📌 Project Overview
 
-## Key Features
+In a traditional network service request process, users may need to submit requests manually, communicate through emails, wait for approvals, and depend on manual assignment to the appropriate IT teams.
 
-- Network request submission
-- Automated approval workflow
-- Request assignment
-- Request tracking
-- Notifications
-- Role-based access
-- Automated request management
+This can lead to:
 
-## Project Documentation
+- Delays in request processing
+- Manual errors
+- Lack of request visibility
+- Repetitive administrative work
+- Difficulty tracking the request lifecycle
 
-The complete project documentation is organized into different phases:
+To overcome these challenges, **Automated Network Request Management** was developed using **ServiceNow**.
 
-1. Ideation Phase
-2. Requirement Analysis
-3. Project Design Phase
-4. Project Planning Phase
-5. Project Development Phase
-6. Project Documentation
+The application provides a structured **Service Catalog** form and uses ServiceNow automation to manage the complete request lifecycle efficiently.
+
+---
+
+## 🎯 Objectives
+
+The main objectives of this project are:
+
+- Automate network service request submission
+- Reduce manual effort in request processing
+- Implement an automated approval process
+- Provide dynamic form behavior
+- Capture requester and request information in a structured manner
+- Automate task creation and assignment
+- Provide email notifications
+- Improve request tracking and visibility
+- Standardize the network request management process
+
+---
+
+## 🛠️ Technologies & ServiceNow Features Used
+
+- **ServiceNow**
+- **Service Catalog**
+- **Catalog Items**
+- **Catalog Variables**
+- **Variable Sets**
+- **Catalog UI Policies**
+- **Flow Designer**
+- **Approval Automation**
+- **Catalog Tasks**
+- **Email Notifications**
+- **Request (REQ)**
+- **Requested Item (RITM)**
+
+---
+
+## 🏗️ Solution Architecture
+
+The project follows an automated request lifecycle:
+
+```text
+                    Requester
+                        │
+                        ▼
+                Service Catalog
+                        │
+                        ▼
+              Network Request Form
+                        │
+          ┌─────────────┼─────────────┐
+          │             │             │
+          ▼             ▼             ▼
+      Requester    Connection      Payment &
+      Information     Type          Address
+                        │
+                        ▼
+                  Submit Request
+                        │
+                        ▼
+                  Request (REQ)
+                        │
+                        ▼
+              Requested Item (RITM)
+                        │
+                        ▼
+              Flow Designer Automation
+                        │
+          ┌─────────────┼─────────────┐
+          │             │             │
+          ▼             ▼             ▼
+      Approval      Notifications   Task Creation
+                                        │
+                              ┌─────────┴─────────┐
+                              │                   │
+                              ▼                   ▼
+                       Field Services          Software
+                              │                   │
+                              └─────────┬─────────┘
+                                        ▼
+                              Request Fulfillment
+                                        │
+                                        ▼
+                                 Request Tracking
