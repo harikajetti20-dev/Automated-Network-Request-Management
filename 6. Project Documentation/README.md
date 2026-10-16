@@ -90,6 +90,6 @@ The project applies ServiceNow platform concepts such as platform configuration,
 
 <div align="center">
 
-**Author:** Harika Jetti · **Department:** CSE · **Institution:** NSRIT
+**Author:**  Jetti Harika · **Department:** CSE · **Institution:** NSRIT
 
 </div>
