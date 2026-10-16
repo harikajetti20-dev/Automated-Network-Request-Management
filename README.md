@@ -606,7 +606,7 @@ The project can be further enhanced by implementing:
 
 # 👤 Author
 
-**Harika Jetti**
+**Jetti Harika**
 
 Bachelor of Technology – Computer Science and Engineering
 
