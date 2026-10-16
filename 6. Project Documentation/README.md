@@ -5,8 +5,7 @@
 **A ServiceNow-based solution for streamlined network request submission, validation, approval, and tracking.**
 
 ![Platform](https://img.shields.io/badge/Platform-ServiceNow-81B5A1?style=for-the-badge)
-![Department](https://img.shields.io/badge/Department-CSE-blue?style=for-the-badge)
-![Type](https://img.shields.io/badge/Type-Academic%20Project-orange?style=for-the-badge)
+
 
 </div>
 
@@ -41,7 +40,7 @@ By bringing the request lifecycle onto a single platform, the project supports a
 
 | | |
 |---|---|
-| **Author / Student Name** | Harika Jetti |
+| **Author / Student Name** | Jetti Harika |
 | **Department** | Computer Science and Engineering (CSE) |
 | **Institution** | Nadimpalli Satyanarayana Raju Institute of Technology (NSRIT) |
 | **Platform** | ServiceNow |
